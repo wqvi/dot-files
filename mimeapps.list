@@ -1,3 +1,4 @@
 
 [Default Applications]
 application/pdf=org.mozilla.firefox.desktop
+application/epub+zip=FBReader.desktop
