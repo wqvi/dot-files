@@ -1,4 +1,5 @@
 
 [Default Applications]
-application/pdf=org.mozilla.firefox.desktop
-application/epub+zip=FBReader.desktop
+application/pdf=org.gnome.Evince.desktop
+application/epub+zip=org.gnome.Evince.desktop
+application/x-rar=org.gnome.Evince.desktop
