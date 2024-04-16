@@ -1,5 +1,26 @@
-VintagestoryData/
-dconf/
-pulse/
-neofetch/
-irssi/
+.config/VintagestoryData/
+.config/dconf/
+.config/pulse/
+.config/neofetch/
+.config/irssi/
+
+# sensitive data
+.gitconfig
+
+# nope!
+Documents/
+Downloads/
+.java/
+.mozilla/
+.lesshst
+.pki/
+.ssh/
+.var/
+.irssi/
+.cache/
+.local/
+.gnupg/
+.parallel/
+.bash_history
+.rtorrent.rc
+.rtorrent/
