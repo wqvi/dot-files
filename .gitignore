@@ -24,3 +24,4 @@ Downloads/
 .bash_history
 .rtorrent.rc
 .rtorrent/
+.wget-hsts
