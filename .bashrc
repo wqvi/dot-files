@@ -13,7 +13,11 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 	export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
 PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 export EDITOR=nvim
+
+alias ls='ls --color=auto -la'
+alias grep='grep --color=auto'
+alias mv='mv -iv'
+alias cp='cp -ivL'
+alias rm='rm -rvI'
