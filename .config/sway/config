@@ -69,6 +69,6 @@ bar {
 }
 
 exec foot -s
-exec wlsunset -l 47.6 -L -122.2 -t 2000 -T 6000
+exec wlsunset -l 47.6 -L -122.2 -t 3500 -T 6000
 
 include /etc/sway/config.d/*
