@@ -3,6 +3,7 @@
 .config/pulse/
 .config/neofetch/
 .config/irssi/
+.config/bashtop/
 
 # sensitive data
 .gitconfig
