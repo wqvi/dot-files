@@ -4,6 +4,8 @@
 .config/neofetch/
 .config/irssi/
 .config/bashtop/
+.FBReader
+.bash_history*
 
 # sensitive data
 .gitconfig
