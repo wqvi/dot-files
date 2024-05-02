@@ -1,2 +1,2 @@
-font=Fira Code Nerd Font 12
+font=Free Mono 12
 on-notify=exec swaymsg exec pw-play /usr/share/sounds/freedesktop/stereo/message-new-instant.oga

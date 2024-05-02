@@ -4,7 +4,7 @@ set $down j
 set $up k
 set $right l
 set $term footclient
-set $menu j4-dmenu-desktop --dmenu="bemenu -i --fn 'Fira Code Nerd Font 16'" --use-xdg-de --no-exec | xargs swaymsg exec --
+set $menu j4-dmenu-desktop --dmenu="bemenu -i --fn 'Free Mono 16'" --use-xdg-de --no-exec | xargs swaymsg exec --
 
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
@@ -54,12 +54,12 @@ bindsym --whole-window $mod+BTN_SIDE exec playerctl play-pause
 bindsym Print exec grim - | wl-copy
 bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
 
-font Fira Code Nerd Font 12
+font Free Mono 12
 
 bar {
 	position top
 
-	font Fira Code Nerd Font 12
+	font Free Mono 12
 	
 	status_command ~/Documents/GitHub/nowhere-status/bin/nowhere-status
 
