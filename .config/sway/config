@@ -49,9 +49,11 @@ bindsym {
 	XF86AudioMute exec amixer -Mq set Master toggle
 }
 
-bindsym --whole-window $mod+Shift+BTN_SIDE exec playerctl play-pause
-bindsym --whole-window $mod+BTN_EXTRA exec playerctl next
-bindsym --whole-window $mod+BTN_SIDE exec playerctl previous
+bindsym --whole-window {
+	$mod+Shift+BTN_SIDE exec playerctl play-pause
+	$mod+BTN_EXTRA exec playerctl next
+	$mod+BTN_SIDE exec playerctl previous
+}
 
 bindsym Print exec grim - | wl-copy
 bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
