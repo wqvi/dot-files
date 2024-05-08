@@ -14,12 +14,13 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 
 PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
-export EDITOR=nvim
+export EDITOR='/usr/bin/nvim'
 
-alias ls='ls --color=auto -la'
-alias grep='grep --color=auto'
-alias mv='mv -iv'
-alias cp='cp -ivL'
-alias rm='rm -rvI'
-alias make='make -j9'
-alias neofetch='fastfetch'
+alias vi='/usr/bin/nvim'
+alias ls='/usr/bin/ls --color=auto -la'
+alias grep='/usr/bin/grep --color=auto'
+alias mv='/usr/bin/mv -iv'
+alias cp='/usr/bin/cp -ivL'
+alias rm='/usr/bin/rm -rvI'
+alias make='/usr/bin/make -j9'
+alias neofetch='/usr/bin/fastfetch'
