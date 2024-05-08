@@ -4,3 +4,4 @@ application/pdf=org.gnome.Evince.desktop
 application/epub+zip=FBReader.desktop
 application/x-rar=org.gnome.Evince.desktop
 x-scheme-handler/https=org.mozilla.firefox.desktop
+image/png=swayimg.desktop
