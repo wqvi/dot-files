@@ -4,6 +4,7 @@
 .config/neofetch/
 .config/irssi/
 .config/bashtop/
+.config/user-dirs.*
 .FBReader
 .bash_history*
 
