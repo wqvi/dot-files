@@ -61,6 +61,8 @@ bindsym Ctrl+Print exec grim -g "$(slurp)"
 
 font Free Mono 12
 
+output 'eDP-1' bg bg stretch
+
 bar {
 	position top
 
