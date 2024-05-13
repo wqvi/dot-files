@@ -61,7 +61,9 @@ bindsym Ctrl+Print exec grim -g "$(slurp)"
 
 font Free Mono 12
 
-output 'eDP-1' bg bg stretch
+smart_borders on
+popup_during_fullscreen ignore
+gaps inner 2
 
 bar {
 	position top
@@ -78,6 +80,13 @@ bar {
 }
 
 exec foot -s
-exec wlsunset -l 47.6 -L -122.2 -t 3500 -T 6000
+exec wlsunset -l 47.6 -L -122.2 -t 3250 -T 6000
+
+# pywal is deprecated, but I am unsure of any alternatives currently
+include ~/.cache/wal/colors-sway
+
+output 'eDP-1' bg $wallpaper stretch
+
+client.focused $color0 $background $foreground $color7 $background
 
 include /etc/sway/config.d/*
