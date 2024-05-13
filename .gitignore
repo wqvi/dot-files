@@ -6,7 +6,7 @@
 .config/bashtop/
 .config/user-dirs.*
 .config/sway/bg
-.config/sway/berries-1920x1200.jpg
+.config/sway/*.jpg
 .FBReader
 .bash_history*
 
