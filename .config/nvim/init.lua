@@ -16,3 +16,4 @@ Plug('preservim/nerdtree', { ['on'] = 'NERDTreeToggle' })
 vim.call('plug#end')
 
 vim.cmd('nnoremap <C-e> :NERDTreeToggle<CR>')
+vim.cmd('nnoremap <C-f> :NERDTreeFocus<CR>')
