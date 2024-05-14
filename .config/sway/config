@@ -65,6 +65,9 @@ smart_borders on
 popup_during_fullscreen ignore
 gaps inner 2
 
+# pywal is deprecated, but I am unsure of any alternatives currently
+include ~/.cache/wal/colors-sway
+
 bar {
 	position top
 
@@ -73,20 +76,19 @@ bar {
 	status_command ~/Documents/GitHub/nowhere-status/bin/nowhere-status
 
 	colors {
-		statusline #ffffff
-		background #323232
-		inactive_workspace #32323200 #32323200 #5c5c5c
+		statusline $foreground 
+		background $background
+		inactive_workspace $background $background $foreground 
+		focused_workspace $color3 $background $foreground
 	}
 }
 
 exec foot -s
 exec wlsunset -l 47.6 -L -122.2 -t 3250 -T 6000
 
-# pywal is deprecated, but I am unsure of any alternatives currently
-include ~/.cache/wal/colors-sway
-
 output 'eDP-1' bg $wallpaper stretch
 
 client.focused $color0 $background $foreground $color7 $background
+client.focused_inactive $background $background $foreground $color7 $background
 
 include /etc/sway/config.d/*
