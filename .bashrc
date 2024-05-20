@@ -16,6 +16,10 @@ fi
 PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 export EDITOR='/usr/bin/nvim'
 
+eval "$(zoxide init bash)"
+
+eval "$(fzf --bash)"
+
 alias vi='/usr/bin/nvim'
 alias ls='/usr/bin/ls --color=auto -la'
 alias grep='/usr/bin/grep --color=auto'
@@ -25,3 +29,4 @@ alias rm='/usr/bin/rm -rvI'
 alias make='/usr/bin/make -j9'
 alias neofetch='/usr/bin/fastfetch'
 alias cat='/usr/bin/bat'
+alias cd='z'
