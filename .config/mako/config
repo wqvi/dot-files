@@ -1,2 +1,10 @@
 font=Free Mono 12
 on-notify=exec swaymsg exec pw-play /usr/share/sounds/freedesktop/stereo/message-new-instant.oga
+
+background-color=#303446
+text-color=#c6d0f5
+border-color=#8caaee
+progress-color=over #414559
+
+[urgency=high]
+border-color=#ef9f76
