@@ -4,7 +4,10 @@ set $down j
 set $up k
 set $right l
 set $term footclient
-set $menu j4-dmenu-desktop --dmenu="bemenu -i --fn 'Free Mono 16'" --use-xdg-de --no-exec | xargs swaymsg exec --
+# Frappé
+set $menu j4-dmenu-desktop --dmenu="bemenu -i --fn 'Free Mono 16' --fb '#303446' --ff '#c6d0f5' --nb '#303446' --nf '#c6d0f5' --tb '#303446' --hb '#303446' --tf '#e78284' --hf '#e5c890' --af '#c6d0f5' --ab '#303446'" --use-xdg-de --no-exec | xargs swaymsg exec --
+
+# bemenu-run "
 
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
