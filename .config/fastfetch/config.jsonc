@@ -13,12 +13,21 @@
     "wm",
     "terminal",
     "terminalfont",
-    "cpu",
-    "gpu",
+    {
+	    "type": "cpu",
+	    "format": "{1}"
+    },
+    {
+	    "type": "gpu",
+	    "format": "{2}"
+    },
     "memory",
     "battery",
     "poweradapter",
     "locale",
     "colors"
-  ]
+  ],
+  "logo": {
+  	"type": "small"
+  }
 }
