@@ -59,7 +59,7 @@ bindsym Print exec grim - | wl-copy
 bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
 bindsym Ctrl+Print exec grim -g "$(slurp)"
 
-font Free Mono 12
+font FiraCode Nerd Font 12
 
 smart_borders on
 popup_during_fullscreen ignore
@@ -71,7 +71,7 @@ include ~/.cache/wal/colors-sway
 bar {
 	position top
 
-	font Free Mono 12
+	font FiraCode Nerd Font 12
 	
 	status_command ~/Documents/GitHub/nowhere-status/bin/nowhere-status
 
