@@ -11,8 +11,11 @@ vim.call('plug#begin')
 
 Plug('preservim/nerdtree', { ['on'] = 'NERDTreeToggle' })
 Plug('catppuccin/nvim')
+Plug('ms-jpq/coq_nvim')
 
 vim.call('plug#end')
+
+vim.cmd('let g:coq_settings = { \'auto_start\': \'shut-up\' }')
 
 vim.cmd('nnoremap <C-e> :NERDTreeToggle<CR>')
 vim.cmd('nnoremap <C-f> :NERDTreeFocus<CR>')
