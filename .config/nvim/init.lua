@@ -29,6 +29,7 @@ vim.call('plug#end')
 vim.cmd('nnoremap <C-e> :NERDTreeToggle<CR>')
 vim.cmd('nnoremap <C-f> :NERDTreeFocus<CR>')
 vim.cmd.colorscheme 'catppuccin-mocha'
+vim.cmd('hi Normal guibg=none')
 
 require('mason').setup()
 
@@ -79,8 +80,6 @@ cmp.setup({
 				cmp.confirm({ select = true })
 			elseif luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()
-			elseif has_words_before() then
-				cmp.complete()
 			else
 				fallback()
 			end
