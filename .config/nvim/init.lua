@@ -8,6 +8,7 @@ vim.opt.smarttab = true
 -- pywal doesn't work??? :(
 --vim.opt.termguicolors = true
 vim.cmd('syntax on')
+vim.cmd('colorscheme vim')
 
 vim.call('plug#begin')
 
