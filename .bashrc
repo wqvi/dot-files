@@ -15,6 +15,7 @@ fi
 
 PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 export EDITOR='/usr/bin/nvim'
+export BAT_THEME='Catppuccin Mocha'
 
 eval "$(zoxide init bash)"
 
@@ -28,6 +29,10 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 eval "$(fzf --bash)"
+source $HOME/.local/share/fzf-git.sh/fzf-git.sh
+
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :200 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 _fzf_compgen_path() {
 	fd --hidden --exclude .git . "$1"
@@ -37,7 +42,17 @@ _fzf_compgen_dir() {
 	fd --type=d --hidden --exclude .git . "$1"
 }
 
-source $HOME/.local/share/fzf-git.sh/fzf-git.sh
+_fzf_comprun() {
+	local cmd=$1
+	shift
+
+	case "$cmd" in
+		cd) fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+		export|unset) fzf --preview "eval 'echo \$'{}" "$@" ;;
+		*) fzf --preview "if [ -d {} ]; then eza -T --color=always {} | head -200; else bat -n --color=always -r :200 {}; fi" "$@" ;;
+	esac
+}
+
 
 alias vi='/usr/bin/nvim'
 alias ls='/usr/bin/ls --color=auto -la'
@@ -49,4 +64,4 @@ alias make='/usr/bin/make -j9'
 alias neofetch='/usr/bin/fastfetch'
 alias cat='/usr/bin/bat'
 alias cd='z'
-alias ls='eza --icons always -l'
+alias ls='eza --icons always -l --git --color always --no-time --no-user --no-permissions'
