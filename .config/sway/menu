@@ -1,0 +1,10 @@
+#!/bin/sh
+
+latte="--fb '#eff1f5' --ff '#4c4f69' --nb '#eff1f5' --nf '#4c4f69' --tb '#eff1f5' --hb '#eff1f5' --tf '#d20f39' --hf '#df8e1d' --af '#4c4f69' --ab '#eff1f5'"
+
+mocha="--fb '#1e1e2e' --ff '#cdd6f4' --nb '#1e1e2e' --nf '#cdd6f4' --tb '#1e1e2e' --hb '#1e1e2e' --tf '#f38ba8' --hf '#f9e2af' --af '#cdd6f4' --ab '#1e1e2e'"
+
+font="SpaceMono Nerd Font 14"
+color=$mocha
+menu="bemenu -i -p 'bemenu-run ->' -R 10 --fn '$font' $color"
+exec j4-dmenu-desktop --dmenu="$menu" --use-xdg-de --no-exec
