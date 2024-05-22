@@ -57,7 +57,7 @@ local caps = require('cmp_nvim_lsp').default_capabilities()
 
 local lspconfig = require('lspconfig')
 lspconfig.clangd.setup{ capabilities = caps }
-vim.keymap.set('n', '<C-f>', function() format.format() end)
+vim.keymap.set('n', '<C-S-f>', function() format.format() end)
 
 local cmp = require('cmp')
 local mapping = cmp.mapping
