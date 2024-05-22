@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+font="SpaceMono Nerd Font"
+font_size="24"
+swaylock -e -f -k -l --font "$font" --font-size "$font_size" --indicator-idle-visible --clock --timestr "%I:%M  %p" --datestr "%a, %F"
