@@ -5,12 +5,14 @@ set $up k
 set $right l
 set $term footclient
 set $menu ~/.config/sway/menu | xargs swaymsg exec --
+set $lock ~/.config/sway/lock
 
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Logout?' -B 'Yes' 'swaymsg exit'
+bindsym $mod+Shift+l exec $lock
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
