@@ -4,7 +4,7 @@ set $down j
 set $up k
 set $right l
 set $term footclient
-set $menu ~/.config/sway/menu | xargs swaymsg exec --
+set $menu ~/.config/sway/menu
 set $lock ~/.config/sway/lock
 
 bindsym $mod+Return exec $term

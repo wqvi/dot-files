@@ -7,4 +7,4 @@ mocha="--fb '#1e1e2e' --ff '#cdd6f4' --nb '#1e1e2e' --nf '#cdd6f4' --tb '#1e1e2e
 font="SpaceMono Nerd Font 14"
 color=$mocha
 menu="bemenu -i -p 'bemenu-run ->' -R 10 --fn '$font' $color"
-exec j4-dmenu-desktop --dmenu="$menu" --use-xdg-de --no-exec
+exec j4-dmenu-desktop --dmenu="$menu" --use-xdg-de
