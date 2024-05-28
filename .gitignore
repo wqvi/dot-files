@@ -8,6 +8,7 @@
 .config/sway/bg
 .config/sway/*.jpg
 .config/sway/*.png
+.config/menus/
 .FBReader
 .bash_history*
 
