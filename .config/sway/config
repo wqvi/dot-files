@@ -99,6 +99,6 @@ exec wlsunset -l 47.6 -L -122.2 -t 3250 -T 6000
 
 output 'eDP-1' bg ~/.config/sway/bg fill
 
-seat seat0 xcursor_theme catppuccin-mocha-rosewater-cursors 24
+seat seat0 xcursor_theme Catppuccin-Mocha-Rosewater-Cursors 32
 
 include /etc/sway/config.d/*
