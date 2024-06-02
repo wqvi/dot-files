@@ -85,7 +85,7 @@ bar {
 		background $base
 		statusline $text
 		focused_statusline $text
-		focused_separator $base
+		focused_separator $peach
 		focused_workspace $base $base $green
 		active_workspace $base $base $blue
 		inactive_workspace $base $base $surface1
