@@ -11,6 +11,7 @@
 .config/menus/
 .FBReader
 .bash_history*
+.mputils/
 
 # sensitive data
 .gitconfig
