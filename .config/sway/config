@@ -41,6 +41,14 @@ bindsym $mod+v splitv
 
 bindsym $mod+f fullscreen
 
+input "1133:16505:Logitech_G_Pro" {
+	pointer_accel -0.5
+}
+
+input "type:touchpad" {
+	dwt disabled
+}
+
 bindsym {
 	XF86MonBrightnessUp exec xbacklight -inc 5
 	XF86MonBrightnessDown exec xbacklight -dec 5
